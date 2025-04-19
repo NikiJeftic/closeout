@@ -1,0 +1,33 @@
+<div class="table-wrapper">
+  <p-table [value]="boats" [rows]="10">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Length (ft)</th>
+        <th>Year</th>
+        <th>Description</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-boat let-rowIndex="rowIndex">
+      <tr>
+        <td>{{ boat.name }}</td>
+        <td>{{ boat.type }}</td>
+        <td>{{ boat.length }}</td>
+        <td>{{ boat.year }}</td>
+        <td
+          class="truncate description"
+          #descEl
+          (mouseenter)="onMouseEnter(descEl, rowIndex)"
+          (mouseleave)="onMouseLeave(rowIndex)"
+          [pTooltip]="
+            hoveredTooltipIndex === rowIndex ? boat.description : undefined
+          "
+          tooltipPosition="top"
+        >
+          {{ boat.description }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

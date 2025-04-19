@@ -1,0 +1,14 @@
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  max-width: 300px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+}

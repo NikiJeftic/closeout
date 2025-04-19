@@ -1,0 +1,28 @@
+.charter-container {
+  border: 1px solid #e1e4e8;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.charter-header {
+  border-bottom: 1px solid #e1e4e8;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.charter-title {
+  text-align: center;
+  margin: 0;
+}
+
+.button-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.charter-content {
+  padding: 3rem;
+}

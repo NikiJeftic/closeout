@@ -1,0 +1,6 @@
+@for(content of editorContents; let i = $index; track i) {
+<div class="editor-wrapper">
+  <p-editor [(ngModel)]="editorContents[i]" [style]="{ height: '100px' }">
+  </p-editor>
+</div>
+}
